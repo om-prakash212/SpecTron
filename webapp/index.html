@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecTron</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>SpecTron</h1>
+        <div class="controls">
+            <button onclick="fetchData()">Refresh Data</button>
+            <button onclick="sendCommand('calibrate')">Calibrate</button>
+            <button onclick="sendCommand('walkAvoid')">Walk Avoid</button>
+            <button onclick="sendCommand('moonwalk')">Moonwalk</button>
+            <button onclick="sendCommand('jump')">Jump</button>
+            <button onclick="sendCommand('turn')">Turn</button>
+            <button onclick="sendCommand('shakeLeg')">Shake Leg</button>
+            <button onclick="sendCommand('swing')">Swing</button>
+            <button onclick="sendCommand('bend')">Bend</button>
+        </div>
+        <div id="dataDisplay">
+            <div class="info-box">
+                <p>Servo 1 Position: <span id="servo1">N/A</span></p>
+            </div>
+            <div class="info-box">
+                <p>Servo 2 Position: <span id="servo2">N/A</span></p>
+            </div>
+            <div class="info-box">
+                <p>Servo 3 Position: <span id="servo3">N/A</span></p>
+            </div>
+            <div class="info-box">
+                <p>Servo 4 Position: <span id="servo4">N/A</span></p>
+            </div>
+            <div class="info-box">
+                <p>Distance: <span id="distance">N/A</span></p>
+            </div>
+            <div class="info-box">
+                <p>Battery Percentage: <span id="battery">N/A</span></p>
+            </div>
+        </div>
+        <footer>
+            <p>Made with ❤️ by OM PRAKASH</p>
+        </footer>
+    </div>
+</body>
+</html>
